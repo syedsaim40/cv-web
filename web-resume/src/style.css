@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap'); 
+
+/*-------------------------------------Custom Styles with custom classes-------------------*/
+body{
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   min-width: 350px;
+}
+.sentence{
+   text-transform: capitalize;
+}
+.unstyled{
+   list-style-type: none;
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+}
+a{
+   transition: all ease-in-out 0.3s;
+   -webkit-transition: all ease-in-out 0.3s;
+   -moz-transition: all ease-in-out 0.3s;
+   color: #fff;
+   text-decoration: none;
+}
+a:focus,
+a:hover{
+   color: #fe6928;
+}
+/*-------------------------------------Style for Header -------------------*/
+nav.myNav{
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 2;
+   background: transparent;
+   padding: 10px 20px;
+   background: rgba(0, 0, 0, 0.3);
+   text-align: center;
+}
+nav.myNav .mainNav{
+   text-transform: uppercase;
+   color: #fff;
+}
+.myNav.navbar{
+   display: block ruby;
+}
+.navbar-expand-lg .navbar-collapse{
+   display: block;
+}
+.navbar-nav{
+   display: inline-block;
+   vertical-align: top;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+   float: left;
+}
+.navbar-dark .navbar-nav .nav-link,
+.myNav .navbar-dark .navbar-nav .nav-link{
+   color: #fff !important;
+   font: 700 14px/18px 'Roboto', serif;
+   transition: all ease-in-out 0.3s;
+   -webkit-transition: all ease-in-out 0.3s;
+   -moz-transition: all ease-in-out 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link{
+   color: #fff !important;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover{
+   color: #fe6928 !important;
+}
+/*-------------------------------------Style for Home Page-------------------*/
+#main-bg{
+   background-image: url(images/main-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+}
+.banner-content {
+   width: 70%;
+   padding: 20px;
+   color: #fff;
+}
+.banner-content h1{
+   font: 900 90px/100px 'Roboto', sans-serif;
+   margin-bottom: 20px;
+}
+.banner-content h1 span{
+   color: #fe6928;
+}
+.banner-content p{
+   font: 700 20px/30px 'Roboto', serif;
+   margin-bottom: 20px;
+}
+.banner-content ul.social-icons{
+   text-align: center;
+}
+.banner-content ul.social-icons li{
+   display: inline-block;
+   vertical-align: top;
+   margin: 0px 10px;
+}
+.banner-content ul.social-icons li a{
+   color: #fff;
+   font-size: 25px;
+}
+.banner-content ul.social-icons li a:focus,
+.banner-content ul.social-icons li a:hover{
+   color: #fe6928;
+}
+.scrollBtn{
+   color: #fff;
+   position: absolute;
+   bottom: 10%;
+   left: auto;
+   right: auto;
+   font-size: 40px;
+   animation: scROll-btn 1s alternate-reverse infinite;
+}
+@keyframes scROll-btn {
+   0%{
+       bottom: 10px;
+   }
+   100% {
+       bottom: 30px;
+   }
+}
+.about-wrapper{
+   background: #2B2B2B;
+   padding: 100px 100px;
+}
+.about-content-holder{
+   text-align: left;
+   padding: 20px;
+}
+.about-content-holder h2{
+   margin-bottom: 20px;
+   color: #fff;
+}
+.about-content-holder p,
+.about-content-holder span,
+.about-content-holder a{
+   display: block;
+   margin-bottom: 10px;
+   color: #7A7A7A;
+}
+.resume-btn{
+   padding:100px 20px 40px 20px;
+}
+.resume-btn a.dBtn{
+   display: inline-block;
+   color: #fff;
+   width: 250px;
+   background: #444;
+   box-shadow: none;
+   text-shadow: none;
+   border: none;
+   border-radius: 5px;
+   padding: 20px 25px;
+   text-decoration: none;
+   font: 900 18px/30px 'Roboto', serif;
+   transition: all ease-in-out 0.3s;
+   -webkit-transition: all ease-in-out 0.3s;
+   -moz-transition: all ease-in-out 0.3s;
+}
+.resume-btn .dBtn:hover{
+   color: #7A7A7A;
+   background: #fff;
+}
+.resume-btn .dBtn span{
+   margin-left: 20px;
+}
+.resume-btn .dBtn strong{
+   font-size: 20px;
+   font-weight: 900;
+}
+/*-------------------------------------Style for About Page-------------------*/
+.about-me{
+   padding: 20px;
+}
+.about-me-holder{
+   position: relative;
+   padding: 80px 45px;
+   text-align: left;
+}
+.about-me-holder::after{
+   position: absolute;
+   content: " ";
+   bottom: 0px;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 1px;
+   background: #444;
+}
+.about-me span{
+   display: inline-block;
+   color: #444;
+   font: 900 18px/30px 'Roboto', serif;
+   position: relative;
+}
+.about-me span::after{
+   position: absolute;
+   content: " ";
+   bottom: -1px;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 5px;
+   background: #444;
+}
+.edu-holder{
+   margin-bottom: 30px;
+}
+strong.dot{
+   display: inline-block;
+   width:  5px;
+   height: 5px;
+   background: #444;
+   border-radius: 100%;
+   margin: 0 10px;
+}
+.edu-holder h2{
+   color: #444;
+   font: 900 24px/35px 'Roboto', serif;
+}
+.edu-holder span{
+   color: #7A7A7A;
+   font: 700 16px/30px 'Roboto', serif;
+   display: inline-block;
+   margin-bottom: 10px;
+}
+.edu-holder p{
+   color: #7A7A7A;
+}
+.skills-holder h2{
+   color: #444;
+   font: 900 18px/28px 'Roboto', serif;
+   text-transform: uppercase;
+}
+.skill-bar{
+   width: 100%;
+   height: 40px;
+   background: #7A7A7A;
+   position: relative;
+   margin-bottom: 20px;
+}
+.skill-bar::after{
+   position: absolute;
+   content: " ";
+   top: 0px;
+   bottom: 0px;
+   left: 0;
+   right: 0;
+   width: 70%;
+   height:  100%;
+   background: #444;
+}
+.skill-bar.bar1::after{
+   width: 30%;
+}
+.skill-bar.bar2::after{
+   width: 80%;
+}
+.skill-bar.bar3::after{
+   width: 90%;
+}
+.skill-bar.bar4::after{
+   width: 60%;
+}
+.skill-bar.bar5::after{
+   width: 70%;
+}
+.skill-bar.bar6::after{
+   width: 75%;
+}
+/*-------------------------------------Style for Contact Page-------------------*/
+#contact{
+   padding: 100px 50px;
+   background: #191919;
+}
+.contact-holder{
+   text-align: left;
+}
+.contact-holder strong{
+   color: #eee;
+   font-size: 80px;
+   font-weight: 900;
+}
+.contact-holder .msg-txt p{
+   color: #999;
+   padding-top: 60px;
+   margin-left: 50px;
+}
+.simpleForm{
+   overflow: hidden;
+   padding: 20px 0;
+}
+.contactForm-holder form label{
+   color: #eee;
+   font: 900 18px/28px 'Roboto', serif;
+   margin-left: 20px;
+   padding-top: 15px;
+   color: #EBEEEE;
+   float: left;
+   width: 17%;
+}
+.contactForm-holder form textarea,
+.contactForm-holder form input{
+   display: block;
+   width: 80%;
+   float: right;
+}
+.contactForm-holder form textarea,
+.contactForm-holder form input[type="text"]{
+   box-shadow: none;
+   text-shadow: none;
+   border: none;
+   padding: 18px 20px;
+   color: #eee;
+   background: #373233;
+   border: 0;
+   outline: none;
+   font-size: 15px;
+   line-height: 24px;
+   transition: all ease-in-out 0.3s;
+   -webkit-transition: all ease-in-out 0.3s;
+   -moz-transition: all ease-in-out 0.3s;
+}
+.contactForm-holder form textarea:focus,
+.contactForm-holder form input[type="text"]:focus,
+.contactForm-holder form textarea:hover,
+.contactForm-holder form input[type="text"]:hover{
+   background: #11ABB0;
+}
+.contactForm-holder form .field-group .formBtn{
+   float: left;
+   display: block;
+   width: 25%;
+   margin-left: 20%;
+   background: #444;
+   border: none;
+   color: #eee;
+   padding: 15px 8px;
+   font: 900 18px/28px 'Roboto', serif;
+}
+.contactForm-holder form .field-group .formBtn:focus,
+.contactForm-holder form .field-group .formBtn:hover{
+   background: #eee;
+   color: #444;
+}
+.field-group{
+   overflow: hidden;
+   margin-bottom: 42px;
+}
+.contact-holder .about-me-holder{
+   padding: 20px;
+}
+/*---------------------------------------Media Query forresponsive website ----------------*/
+@media only screen and (max-width:720px){
+   .banner-content h1 {
+       font: 700 40px/50px 'Roboto', sans-serif;
+       margin-bottom: 20px;
+   }
+   .banner-content {
+       width: 100%;
+       padding: 10px;
+       color: #fff;
+   }
+   .banner-content h1 span {
+       display: block;
+   }
+   .banner-content p {
+       font: 700 15px/19px 'Roboto', serif;
+       margin-bottom: 20px;
+   }
+   .scrollBtn{
+       left: 45%;
+   }
+   .myNav.navbar{
+       display: block;
+   }
+   .nav-link{
+       padding: 10px 0;
+   }
+   .about-wrapper {
+       padding: 50px 20px;
+   }
+   .edu-holder span {
+       font: 700 14px/16px 'Roboto', serif;
+       margin-bottom: 10px;
+   }
+   .about-me-holder{
+       padding: 20px;
+   }
+   .contact-holder {
+       text-align: center;
+   }
+   .contact-holder .msg-txt p {
+       color: #999;
+       padding-top: 10px;
+       margin-left: 0;
+   }
+   #contact {
+       padding: 30px 20px;
+   }
+   .field-group {
+       overflow: hidden;
+       margin-bottom: 20px;
+   }
+   .contactForm-holder form textarea,
+   .contactForm-holder form input,
+   .contactForm-holder form label{
+       width: 100%;
+       float: none;
+   }
+   .contactForm-holder form label {
+       font: 700 14px/18px 'Roboto', serif;
+       margin: 0 0 10px 0;
+   }
+   .contactForm-holder form .field-group .formBtn {
+       float: none;
+       width: 100%;
+       margin-left: 0;
+       padding: 15px 8px;
+       font: 700 14px/18px 'Roboto', serif;
+   }
+}
+.h1-style
+{
+   color: #11ABB0;
+}

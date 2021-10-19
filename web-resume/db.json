@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Saim",
+      "email": "syedsaim488@gmail.com",
+      "subject": "1196",
+      "message": "A"
+    },
+    {
+      "id": 3,
+      "name": "Hamza",
+      "email": "hamza@gmail.com",
+      "subject": "1180",
+      "message": "A"
+    },
+    {
+      "name": "Usama",
+      "email": "usama@gmail.com",
+      "subject": "1177",
+      "message": "B",
+      "id": 4
+    },
+    {
+      "name": "Hassan Raza",
+      "email": "hassanraza400@gmail.com",
+      "subject": "F18-1188",
+      "message": "D",
+      "id": 5
+    },
+    {
+      "name": "abdulla",
+      "email": "abdulaa@gmail.com",
+      "subject": "F18-1177",
+      "message": "BsCS-A",
+      "id": 6
+    },
+    {
+      "name": "chutiya",
+      "email": "chustiya@phudi.com",
+      "subject": "7777",
+      "message": "hsdghf",
+      "id": 7
+    }
+  ]
+}
